@@ -1,0 +1,47 @@
+@CHARSET "ISO-8859-1";
+
+#Login_Form
+{ 
+	position:absolute;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+    text-align:center;
+    padding: 10px 10px 10px 10px;
+}
+
+#login_button_submit
+{
+ 	margin:10px 25px 10px 10px;
+ 	width:80px;
+}
+
+#cancel
+{
+	margin:10px 10px 10px 25px;
+	width:80px;
+}
+.form-group label
+{
+	margin-right:20px;
+}
+
+.form-group
+{
+	margin:10px 10px 10px 10px;
+	text-align: center;
+}
+#name
+{
+    font-size:40px;
+    margin-top:40px;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+	
