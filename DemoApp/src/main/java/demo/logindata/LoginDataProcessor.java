@@ -17,7 +17,7 @@ public class LoginDataProcessor
 		private static EntityManager em;
 	//	Logger m_oLogger = Logger.getLogger (LoginDataProcessor.class);
 		@ResponseBody
-		@RequestMapping(value="/loginManagerGet", method = RequestMethod.POST, headers = {"Content-type=application/json;charset=utf-8"})
+		@RequestMapping(value="/loginManagerGet", method = RequestMethod.POST, headers = {"Content-type=application/json"})
 		public LoginManagerResponse get (@RequestBody LoginData oData)
 		{
 			LoginManagerResponse oLoginManagerResponse = getData(oData);
@@ -27,7 +27,7 @@ public class LoginDataProcessor
 		{
 			/*m_oLogger.info("getData");
 			m_oLogger.debug("LoginData - oData.m_strUserName [IN] : " + oData.m_strUserName);*/
-			boolean b_userexists = check_username_exists(oData.getM_strUserName());
+			boolean b_userexists  = check_username_exists(oData.getM_strUserName());
 			LoginManagerResponse oLoginManagerResponse = new LoginManagerResponse ();
 			oLoginManagerResponse.m_strUser = oData.getM_strUserName();
 			oLoginManagerResponse.m_strPassWord = oData.getM_strPassword();
